@@ -1,0 +1,4 @@
+build/
+build-win/
+*.o
+score

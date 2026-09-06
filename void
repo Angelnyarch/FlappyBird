@@ -1,0 +1,40 @@
+
+void Bird::Jump(){
+    move = -8;
+    sprite.setRotation(sf::degrees(-15.f));
+}
+sf::Vector2f Bird::GetPosition(){
+    return sprite.getPosition();
+}
+bool Bird::GetLive(){
+    return live;
+}
+void Bird::Death(){
+    live = false;
+}
+void Bird::Initiated(){
+    initiated = true;
+}
+void Bird::draw(sf::RenderTarget &rt, sf::RenderStates rs) const{
+    rt.draw(sprite, rs);
+}
+
+void Bird::Jump(){
+    move = -8;
+    sprite.setRotation(sf::degrees(-15.f));
+}
+sf::Vector2f Bird::GetPosition(){
+    return sprite.getPosition();
+}
+bool Bird::GetLive(){
+    return live;
+}
+void Bird::Death(){
+    live = false;
+}
+void Bird::Initiated(){
+    initiated = true;
+}
+void Bird::draw(sf::RenderTarget &rt, sf::RenderStates rs) const{
+    rt.draw(sprite, rs);
+}
