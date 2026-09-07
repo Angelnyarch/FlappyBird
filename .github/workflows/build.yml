@@ -37,14 +37,16 @@ jobs:
           name: FlappyBird-Linux
           path: FlappyBird-Linux.zip
 
-  build-windows:
+    build-windows:
     runs-on: windows-latest
+    env:
+      CMAKE_POLICY_VERSION_MINIMUM: "3.5"
     steps:
       - uses: actions/checkout@v4
 
       - name: Configurar y compilar
         run: |
-          cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+          cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
           cmake --build build --config Release -j4
 
       - name: Empaquetar
