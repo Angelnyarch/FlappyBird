@@ -4,6 +4,7 @@ project(FlappyBird LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(BUILD_SHARED_LIBS FALSE)
+set(SFML_USE_SYSTEM_DEPS OFF)
 
 include(FetchContent)
 FetchContent_Declare(SFML
