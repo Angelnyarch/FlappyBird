@@ -37,7 +37,7 @@ jobs:
           name: FlappyBird-Linux
           path: FlappyBird-Linux.zip
 
-    build-windows:
+  build-windows:
     runs-on: windows-latest
     env:
       CMAKE_POLICY_VERSION_MINIMUM: "3.5"
